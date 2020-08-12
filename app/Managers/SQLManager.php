@@ -4,7 +4,7 @@ namespace App\Managers;
 
 use PHPSQLParser\PHPSQLParser;
 
-class SQLManager
+class SqlManager
 {
     protected $sql;
     protected $parsedSql;
@@ -41,6 +41,6 @@ class SQLManager
 
     public function getSqlSeeder()
     {
-        
+
     }
 }
