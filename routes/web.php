@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/migration', function () {
+    return view('migration');
+});
+Route::post('/migration-execute', 'MigrationController@create');
+
 Route::get('/', function () {
     return view('welcome');
 });
