@@ -23,7 +23,7 @@ class SqlManager
     private function parseSql($_sql)
     {
         $parser = new PHPSQLParser();
-        $parsed = $parser->parse($sql, true);
+        $parsed = $parser->parse($_sql, true);
 
         if ($parsed == false)
         {
